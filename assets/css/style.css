@@ -21,6 +21,14 @@ Tu tong quan den chi tiet
 3. Mau sac
 4. Kieu dang (kieu chu, BUI)
  */
+.clear {
+    clear: both;
+}
+
+.text-white {
+    color: #fff !important;
+}
+
 #main {
 
 }
@@ -133,6 +141,151 @@ Tu tong quan den chi tiet
 #content {
     height: 1000px;
 }
+
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 105px;
+    }
+
+#content .section-heading {
+    font-size: 30px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 22px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .members-list {
+    margin-top: 48px;
+}
+
+#content .member-item {
+    float: left;
+    width: 33.33333%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+/* Tour session */
+
+.tour-session {
+    background-color: #000;
+}
+
+.tickets-list {
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tickets-list li {
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 8px;
+    margin-left: 16px;
+}
+
+.tickets-list .quantity {
+    float: right;
+    background-color: #000;
+    padding: 3px 8px;
+    border-radius: 70%;
+    color: #fff;
+    margin-right: 16px;
+    margin-top: -3  px;
+}
+
+/* Places */
+
+.places-list{
+    margin: 32px -8px 0;
+    padding-bottom: 42px;
+}
+
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body{
+    background: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 650;
+}
+
+.place-time{
+    margin-top: 15px;
+    opacity: 0.6;  
+}
+
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.place-buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* Footer Session */
 
 #footer {
 
