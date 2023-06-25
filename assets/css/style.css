@@ -8,6 +8,7 @@
 
 html {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* 
@@ -21,6 +22,8 @@ Tu tong quan den chi tiet
 3. Mau sac
 4. Kieu dang (kieu chu, BUI)
  */
+
+ /* Common */
 .clear {
     clear: both;
 }
@@ -29,6 +32,68 @@ Tu tong quan den chi tiet
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.btn {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.pull-right {
+    float: right;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+/* Main */
 #main {
 
 }
@@ -138,10 +203,6 @@ Tu tong quan den chi tiet
     margin-top: 25px;
 }
 
-#content {
-    height: 1000px;
-}
-
 #content .content-section {
     width: 800px;
     padding: 64px 0;
@@ -174,12 +235,7 @@ Tu tong quan den chi tiet
 
 #content .members-list {
     margin-top: 48px;
-}
-
-#content .member-item {
-    float: left;
-    width: 33.33333%;
-    text-align: center;
+    display: flex;
 }
 
 #content .member-name {
@@ -231,14 +287,8 @@ Tu tong quan den chi tiet
 /* Places */
 
 .places-list{
-    margin: 32px -8px 0;
-    padding-bottom: 42px;
-}
-
-.place-item{
-    float: left;
-    width: 33.33333%;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 10px;
 }
 
 .place-img{
@@ -269,20 +319,6 @@ Tu tong quan den chi tiet
 .place-desc{
     margin-top: 15px;
     line-height: 1.4;
-}
-
-.place-buy-btn {
-    color: #fff;
-    background-color: #000;
-    text-decoration: none;
-    padding: 11px 16px;
-    display: inline-block;
-    margin-top: 15px;
-}
-
-.place-buy-btn:hover {
-    background-color: #ccc;
-    color: #000;
 }
 
 .modal {
@@ -378,6 +414,46 @@ Tu tong quan den chi tiet
     font-weight: bolder;
 }
 
+/* CONTACT FORM */
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn {
+    background-color: #000;
+    color: #fff;
+    border: 0 #000;
+    padding: 12px 16px;
+    float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+/* MODAL */
 .modal-footer {
     padding: 20px 0px;
     text-align: right;
@@ -387,12 +463,41 @@ Tu tong quan den chi tiet
     color: #2196F3;
 }
 
+/* Map Section */
+.map-section img {
+    width: 100%;
+}
+
 /* Footer Session */
 
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
 
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover {
+    opacity: 0.4;
+    cursor: default;
+}
+
+#footer .copyright {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
 
 @keyframes modalFadeIn {
     from {
