@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
     <title>The band</title>
 </head>
@@ -17,10 +18,11 @@
                 <li><a href="#band">Band</a></li>
                 <li><a href="#tour">Tour</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#">
-                    More 
-                    <i class="nav-arrow-down ti-angle-down"></i>
-                </a>
+                <li>
+                    <a href="#">
+                        More 
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
                     <ul class="subnav">
                         <li><a href="#">Merchandise</a></li>
                         <li><a href="#">Extras</a></li>
@@ -35,6 +37,9 @@
                 <i class="search-icon ti-search"></i>
             </div>
 
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="mobile-menu-icon ti-menu"></i>
+            </div>
             <!-- End: Search Button -->
         </div>
 
@@ -51,7 +56,7 @@
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sub-heading">We love music</p>
                 <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="members-list">
+            <div class="row members-list">
                 <div class="col col-third text-center">
                     <p class="member-name">Name</p>
                     <img src="./assets/img/band/member1.jpg" alt="Name" class="member-img">
@@ -217,6 +222,7 @@
     </div>
     <!-- End: Modal -->
 
+    <!-- Tao su kien mua ticket -->
     <script>
         const buyBtns = document.querySelectorAll('.js-buy-tickets')
         const modal = document.querySelector('.js-modal-open')
@@ -247,6 +253,33 @@
             event.stopPropagation('modal-container')
         })
 
+    </script>
+
+    
+    <script>
+        var header = document.getElementById('header')
+        var mobileMenu = document.getElementById('mobile-menu')
+        var headHeight = header.clientHeight
+
+        // Dong/mo menu header tren mobile
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headHeight
+            if (isClosed) {
+                header.style.height = 'auto';
+            }
+            else {
+                header.style.height = null;
+            }
+        }
+
+        //  Tu dong dong khi click vao menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]')
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            menuItem.onclick = function() {
+                header.style.height = null
+            }
+        }
     </script>
 </body>
 </html>
