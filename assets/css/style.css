@@ -131,7 +131,7 @@ Tu tong quan den chi tiet
     text-decoration: none;
     line-height: 46px;
     padding: 0px 24px;
-    display: inline-block;
+    display: block;
 }
 
 #nav > li:hover > .subnav {
@@ -160,6 +160,12 @@ Tu tong quan den chi tiet
 
 .nav-arrow-down {
     font-size: 10px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .mobile-menu-btn,
@@ -249,7 +255,6 @@ Tu tong quan den chi tiet
 
 #content .members-list {
     margin-top: 48px;
-    display: flex;
 }
 
 #content .member-name {
@@ -301,7 +306,7 @@ Tu tong quan den chi tiet
 /* Places */
 
 .places-list{
-    margin-top: 32px;
+    margin-top: 16px;
     margin-bottom: 10px;
 }
 
