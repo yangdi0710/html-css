@@ -7,6 +7,10 @@
     #header .search-btn {
         display: none;
     }
+
+    #header {
+        overflow: hidden;
+    }
 }
 
 /* Tablet */
