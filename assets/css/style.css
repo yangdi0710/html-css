@@ -40,10 +40,13 @@ Tu tong quan den chi tiet
     color: #fff;
     background-color: #000;
     text-decoration: none;
-    padding: 11px 16px;
+    padding: 12px 20px;
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -62,6 +65,10 @@ Tu tong quan den chi tiet
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px !important;
 }
 
 .row {
@@ -218,6 +225,7 @@ Tu tong quan den chi tiet
 #slider .text-description {
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 2px #000;
 }
 
 #content .content-section {
@@ -446,6 +454,16 @@ Tu tong quan den chi tiet
 .contact-info i[class*="ti-"] {
     width: 30px;
     display: inline-block;
+}
+
+.contact-info a {
+    color: #0e39b1;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.contact-info a:hover {
+    opacity: 1;
 }
 
 .contact-form {
